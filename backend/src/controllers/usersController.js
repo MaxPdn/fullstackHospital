@@ -24,17 +24,12 @@ async function postUser(req, res) {
       email: email,
       age: age,
     };
-
     users.push(user);
-
     await fs.writeFile(dataPath, JSON.stringify(users, null, 2));
-
     console.log(`✅L'utilisateur ${user} est bien ajouté.`);
-
-    res.status(201).json({ user: users });
+    res.status(201).json(users);
   } catch (err) {
     console.error("Erreur :", err.message);
-
     res.status(500).json({ error: err.message });
   }
 }
@@ -42,10 +37,17 @@ async function postUser(req, res) {
 //affichage users
 
 function getUser(req, res) {
-  res.json({ message: "users route fonctionne" });
+  try {
+    res.status(201).json(users);
+    return users;
+  } catch (error) {
+    console.error("Erreur :", err.message);
+    res.status(500).json({ error: err.message });
+  }
 }
+
 
 export const usersController = {
   postUser,
-  getUser
+  getUser,
 };
