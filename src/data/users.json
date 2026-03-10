@@ -7,7 +7,7 @@
     "email": "johnDoe@gmail.com",
     "firstname": "Doe",
     "role": "admin",
-    "password": 1234
+    "password": 12345
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "email": "zannourogalex@gmail.com",
     "firstname": "ZANNOU",
     "role": "doctor",
-    "password": 1234
+    "password": 12345
   },
   {
     "id": 3,
@@ -27,16 +27,36 @@
     "email": "yessia@gmail.com",
     "firstname": "YESSIA",
     "role": "recept",
-    "password": 1234
+    "password": 12345
   },
   {
     "id": 4,
-    "username": "Marcel",
-    "firstname": "YESSIA",
-    "role": "recept",
-    "password": 1234,
+    "username": "Max",
+    "firstname": "PADONOU",
+    "role": "admin",
+    "password": 12345,
     "telephone": "0152488522",
     "email": "yessia@gmail.com",
     "age": 25
+  },
+  {
+    "id": 5,
+    "username": "fgyh",
+    "firstname": "mo",
+    "role": "admin",
+    "password": "12",
+    "telephone": 45,
+    "email": "padonoumaxson@gmail.com",
+    "age": 12
+  },
+  {
+    "id": 6,
+    "username": "fgyh",
+    "firstname": "mo",
+    "role": "admin",
+    "password": "12",
+    "telephone": 45,
+    "email": "padonoumaxson@gmail.com",
+    "age": 12
   }
 ]
