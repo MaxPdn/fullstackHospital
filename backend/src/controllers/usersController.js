@@ -24,10 +24,12 @@ async function postUser(req, res) {
       email: email,
       age: age,
     };
+
     users.push(user);
     await fs.writeFile(dataPath, JSON.stringify(users, null, 2));
-    console.log(`✅L'utilisateur ${user} est bien ajouté.`);
+    console.log(`✅L'utilisateur est bien ajouté.`);
     res.status(201).json(users);
+
   } catch (err) {
     console.error("Erreur :", err.message);
     res.status(500).json({ error: err.message });
